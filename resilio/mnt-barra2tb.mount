@@ -1,0 +1,12 @@
+[Unit]
+Description = usb
+
+[Mount]
+What = LABEL=barra2tb 
+Where = /mnt/barra2tb
+Type = ext4
+Options = rw
+
+[Install]
+WantedBy = multi-user.target
+

@@ -1,0 +1,11 @@
+ version: '2'
+ volumes:
+   resin-data:
+ services:
+   resilio:
+    build: ./resilio
+    privileged: true
+    volumes:
+    - 'resin-data:/data'
+    ports:
+     - "8888:8888"
